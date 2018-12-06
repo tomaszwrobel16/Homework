@@ -1,0 +1,28 @@
+﻿#include <iostream>
+#include <math.h>
+
+int n;
+int length;
+int ans;
+
+int main()
+{
+    
+    std::cout << "enter size of multiplication table: ";
+    std::cin >> ans;
+    n = sqrt(ans);
+    
+    length = log10(n*n);
+    
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= n; j++){
+            std::cout << i * j;
+            for(int a = 0; a < length - log10(i*j); a++)
+                std::cout << " ";
+                std::cout << "|";
+        }
+        std::cout << "\n";
+    }
+    
+    return 0;
+}

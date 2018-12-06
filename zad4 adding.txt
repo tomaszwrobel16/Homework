@@ -1,0 +1,14 @@
+#include <iostream>
+
+int n;
+
+int main()
+{
+	std::cout << "enter number: ";
+	std::cin >> n;
+
+	for (int i = 1; i <= n/2; i++)
+		std::cout << i << " + " << n - i << std::endl;
+
+	return 0;
+}

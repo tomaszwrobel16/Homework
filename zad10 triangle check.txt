@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+
+int a, b, c;
+
+int main()
+{
+    
+    std::cout << "enter length of a: ";
+    std::cin >> a;
+	std::cout << "enter length of b: ";
+    std::cin >> b;
+	std::cout << "enter length of c: ";
+    std::cin >> c;
+	std::string text = {"boki a = " + std::to_string(a) + ", b = " + std::to_string(b) + ", c = " + std::to_string(c)};
+	
+	if(a > 0 && b > 0 && c > 0){
+		if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a)
+			std::cout << text << " tworzą trojkat prostokatny.";
+		else
+		    std::cout << text << " nie tworzą trojkata prostokatnego.";
+	}
+	else
+	std::cout << "boki muszą być dodatnie."; 
+    return 0;
+}

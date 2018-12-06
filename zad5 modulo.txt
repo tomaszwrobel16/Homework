@@ -1,0 +1,14 @@
+#include <iostream>
+
+int a, b;
+
+int main()
+{
+	std::cout << "enter number a: ";
+	std::cin >> a;
+	std::cout << "enter number b: ";
+	std::cin >> b;
+	std::cout << a % b;
+
+	return 0;
+}

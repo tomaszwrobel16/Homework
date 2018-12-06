@@ -1,0 +1,18 @@
+#include <iostream>
+
+int n = 100;
+int sum = 0;
+int cursor = 1;
+
+int main()
+{
+	if(cursor % 2 == 1)
+	cursor++;
+	while (cursor <= n) {
+		sum += cursor;
+		cursor += 2;
+	}
+	std::cout << sum;
+
+	return 0;
+}
